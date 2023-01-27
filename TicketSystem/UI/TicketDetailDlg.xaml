@@ -1,0 +1,27 @@
+﻿<Window x:Class="_TicketSystem.TicketDetailDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_TicketSystem"
+        mc:Ignorable="d"
+        Title="TicketDetailDlg" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="179*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Kunde" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum" HorizontalAlignment="Center" Margin="0,96,0,0" VerticalAlignment="Top"/>
+        <Button Content="Ok" x:Name="btOk" HorizontalAlignment="Center" Margin="0,393,0,0" VerticalAlignment="Top" Click="btOk_Click"/>
+        <Button Grid.Column="1" Content="Abbrechen" x:Name="btAbbrechen" HorizontalAlignment="Left" Margin="633,388,0,0" VerticalAlignment="Top" Click="btAbbrechen_Click"/>
+        <Label Content="Meldungstext" HorizontalAlignment="Center" Margin="0,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stauts" HorizontalAlignment="Center" Margin="0,315,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbBeschreibung" Grid.Column="1" HorizontalAlignment="Left" Height="117" Margin="29,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="403"/>
+        <Button Grid.Column="1" x:Name="addKunde" Content="Kunde hinzufügen" HorizontalAlignment="Left" Margin="358,40,0,0" VerticalAlignment="Top" Click="addKunde_Click"/>
+        <Label Grid.Column="1" x:Name="lbDate" Content="" HorizontalAlignment="Left" Height="35" Margin="39,96,0,0" VerticalAlignment="Top" Width="128"/>
+        <ComboBox x:Name="comboKunde" Grid.Column="1" HorizontalAlignment="Left" Margin="39,34,0,0" VerticalAlignment="Top" Width="150" Height="32"/>
+        <ComboBox x:Name="comboStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="39,319,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

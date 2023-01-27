@@ -1,0 +1,17 @@
+﻿<Window x:Class="_TicketSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_TicketSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="lbTickets" Margin="60,27,60,143" FontFamily="Consolas" SelectionChanged="lbTickets_SelectionChanged" />
+        <Button x:Name="btNeu" Content="Neu" HorizontalAlignment="Left" Margin="60,325,0,0" Width="81" FontSize="16" Height="35" VerticalAlignment="Top" Click="btNeu_Click"/>
+        <Button x:Name="btAend" IsEnabled="false" Content="Bearbeiten" HorizontalAlignment="Left" Margin="168,325,0,0" Width="81" FontSize="16" Height="35" VerticalAlignment="Top" Click="btAend_Click"/>
+        <Button x:Name="btLoesch" IsEnabled="false" Content="Löschen" HorizontalAlignment="Left" Margin="283,325,0,0" Width="81" FontSize="16" Click="btLoeschen_Click" Height="35" VerticalAlignment="Top"/>
+        <Button x:Name="btEnd" Content="Beenden" HorizontalAlignment="Left" Margin="692,366,0,0" Width="81" FontSize="16" Click="btEnd_Click" Height="36" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

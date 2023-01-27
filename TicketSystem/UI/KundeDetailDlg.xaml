@@ -1,0 +1,27 @@
+﻿<Window x:Class="_TicketSystem.KundeDetailDlg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_TicketSystem"
+        mc:Ignorable="d"
+        Title="KundeDetailDlg" Height="450" Width="450" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Name" Margin="36,28,60,0" VerticalAlignment="Top" Height="33" FontSize="16"/>
+        <Label Content="Vorname" Margin="36,102,44,0" VerticalAlignment="Top" Height="33" FontSize="16"/>
+        <Label Content="Geburtsdatum" Margin="32,171,32,0" VerticalAlignment="Top" Height="33" FontSize="16"/>
+        <Label Content="Geschlecht" Margin="32,250,32,0" VerticalAlignment="Top" Height="33" FontSize="16"/>
+        <TextBox Grid.Column="1" x:Name="tbName" Margin="0,28,76,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" FontSize="14"/>
+        <TextBox Grid.Column="1" x:Name="tbVorname" Margin="0,106,76,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" FontSize="14"/>
+        <TextBox Grid.Column="1" x:Name="tbGeburtstag" Margin="0,175,146,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" FontSize="14"/>
+        <ComboBox Grid.Column="1" x:Name="comboGeschl" Margin="0,251,76,0" VerticalAlignment="Top" Height="22"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="36,346,0,0" VerticalAlignment="Top" Height="31" Width="84" FontSize="14" Click="btnOK_Click"/>
+        <Button x:Name="btnAbbrechen" Content="Abbrechen" HorizontalAlignment="Left" Margin="40,346,0,0" VerticalAlignment="Top" Height="31" Width="84" FontSize="14" Grid.Column="1" Click="btnAbbrechen_Click"/>
+        <DatePicker x:Name="dateAuswahl" Grid.Column="1" HorizontalAlignment="Left" Margin="129,176,0,0" VerticalAlignment="Top" Height="24" Width="125" SelectedDateChanged="dateAuswahl_SelectedDateChanged" FirstDayOfWeek="Monday" SelectedDateFormat="Long"/>
+
+    </Grid>
+</Window>
